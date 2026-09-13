@@ -1,30 +1,280 @@
-# Privacy Policy / プライバシーポリシー
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — KnitRow: Crochet Row Counter</title>
+<style>
+  :root {
+    --paper: #EFEAE0;
+    --paper-edge: #E3DCCC;
+    --ink: #2E2B24;
+    --ink-soft: #5C5749;
+    --thread: #3F5266;
+    --thread-soft: #8C9CAC;
+    --rust: #A85B3B;
+  }
 
-Last updated: September 2026 / 最終更新日: 2026年9月
+  * { box-sizing: border-box; }
 
-ボンドルド（以下、「当方」）は、提供するアプリケーション「KnitRow: Crochet Row Counter（棒針・かぎ針編み用段数カウンター）」（以下、「本アプリ」）における利用者情報の取り扱いについて、以下のとおりプライバシーポリシーを定めます。
+  html { -webkit-text-size-adjust: 100%; }
 
----
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
 
-## 1. 収集する情報とその利用目的 (Information Collection and Use)
+  .stitchbar {
+    height: 10px;
+    width: 100%;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      var(--thread) 0px,
+      var(--thread) 2px,
+      transparent 2px,
+      transparent 10px
+    );
+    opacity: 0.55;
+  }
 
-### 日本語
-本アプリは、ユーザーの個人を特定できる情報（氏名、電話番号、住所、クレジットカード情報など）を収集・保持・外部へ送信することはありません。
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
 
-* **ローカルデータ:** カウント数やプロジェクト名、設定情報などのすべてのデータは、ユーザーの端末内（ローカルストレージ）にのみ保存されます。外部サーバーへの送信は一切行われません。
-* **購入情報（アプリ内課金）:** アプリ内課金の決済処理はすべてApple社のApp Storeシステムを通じて安全に行われます。当方が購入者のクレジットカード情報や決済口座情報を取得・保存することはありません。
+  header.hero {
+    margin-bottom: 56px;
+  }
 
-### English
-KnitRow: Crochet Row Counter does not collect, store, or transmit any personally identifiable information (such as your name, address, or payment credentials).
+  .mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    color: var(--thread);
+    margin-bottom: 22px;
+  }
 
-* **Local Data:** All user-created data (counter values, project names, and settings) is stored exclusively on your local device. No data is transmitted to external servers.
-* **In-App Purchases:** All transactions and billing processes are handled securely by Apple via the App Store. The developer never accesses, collects, or stores your payment details.
+  .mark svg { flex-shrink: 0; }
 
----
+  h1 {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.25;
+    margin: 0 0 6px;
+    color: var(--ink);
+  }
 
-## 2. お問い合わせ窓口 (Contact Us)
+  h1 .jp {
+    display: block;
+    font-size: 20px;
+    color: var(--ink-soft);
+    margin-top: 6px;
+  }
 
-本ポリシーまたは本アプリに関するお問い合わせやサポートは、以下の窓口までお願いいたします。
+  .updated {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-top: 18px;
+  }
 
-* **Developer / 開発者:** ボンドルド (Bondrewd)
-* **Email / お問い合わせ先:** 1004k0109n@gmail.com
+  .intro {
+    margin-top: 28px;
+    font-size: 15.5px;
+    color: var(--ink-soft);
+    border-left: 2px solid var(--thread-soft);
+    padding-left: 18px;
+  }
+
+  section {
+    margin-top: 48px;
+  }
+
+  section + section {
+    padding-top: 44px;
+    border-top: 1px dashed var(--paper-edge);
+    position: relative;
+  }
+
+  section + section::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 46px;
+    height: 2px;
+    background: var(--rust);
+  }
+
+  h2 {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--ink);
+    margin: 0 0 4px;
+  }
+
+  h2 .en {
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: var(--thread);
+    margin-bottom: 8px;
+  }
+
+  .lang-block {
+    margin-top: 22px;
+  }
+
+  .lang-label {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--thread-soft);
+    margin-bottom: 8px;
+  }
+
+  p { margin: 0 0 14px; font-size: 15.5px; }
+
+  ul {
+    margin: 0 0 14px;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+    font-size: 15.5px;
+  }
+
+  li strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .contact-card {
+    margin-top: 22px;
+    padding: 20px 22px;
+    background: #F7F4EC;
+    border: 1px solid var(--paper-edge);
+    border-radius: 4px;
+  }
+
+  .contact-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 15px;
+    padding: 6px 0;
+  }
+
+  .contact-row + .contact-row {
+    border-top: 1px dashed var(--paper-edge);
+  }
+
+  .contact-row .label {
+    color: var(--ink-soft);
+  }
+
+  .contact-row a {
+    color: var(--thread);
+    text-decoration: none;
+    border-bottom: 1px solid var(--thread-soft);
+  }
+
+  .contact-row a:hover { border-color: var(--thread); }
+
+  footer {
+    margin-top: 64px;
+    font-size: 13px;
+    color: var(--thread-soft);
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    main { padding: 48px 18px 72px; }
+    h1 { font-size: 27px; }
+    h1 .jp { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="stitchbar"></div>
+
+<main>
+  <header class="hero">
+    <div class="mark">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="10" cy="10" r="8.5" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M4 10c2-2.5 4-2.5 6 0s4 2.5 6 0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+      KnitRow
+    </div>
+    <h1>
+      Privacy Policy
+      <span class="jp">プライバシーポリシー</span>
+    </h1>
+    <p class="updated">Last updated: September 2026 ／ 最終更新日: 2026年9月</p>
+    <p class="intro">
+      ボンドルド(以下、「当方」)は、提供するアプリケーション「KnitRow: Crochet Row Counter(棒針・かぎ針編み用段数カウンター)」(以下、「本アプリ」)における利用者情報の取り扱いについて、以下のとおりプライバシーポリシーを定めます。
+    </p>
+  </header>
+
+  <section>
+    <h2>
+      <span class="en">Information Collection and Use</span>
+      1. 収集する情報とその利用目的
+    </h2>
+
+    <div class="lang-block">
+      <div class="lang-label">日本語</div>
+      <p>本アプリは、ユーザーの個人を特定できる情報(氏名、電話番号、住所、クレジットカード情報など)を収集・保持・外部へ送信することはありません。</p>
+      <ul>
+        <li><strong>ローカルデータ:</strong> カウント数やプロジェクト名、設定情報などのすべてのデータは、ユーザーの端末内(ローカルストレージ)にのみ保存されます。外部サーバーへの送信は一切行われません。</li>
+        <li><strong>購入情報(アプリ内課金):</strong> アプリ内課金の決済処理はすべてApple社のApp Storeシステムを通じて安全に行われます。当方が購入者のクレジットカード情報や決済口座情報を取得・保存することはありません。</li>
+      </ul>
+    </div>
+
+    <div class="lang-block">
+      <div class="lang-label">English</div>
+      <p>KnitRow: Crochet Row Counter does not collect, store, or transmit any personally identifiable information (such as your name, address, or payment credentials).</p>
+      <ul>
+        <li><strong>Local Data:</strong> All user-created data (counter values, project names, and settings) is stored exclusively on your local device. No data is transmitted to external servers.</li>
+        <li><strong>In-App Purchases:</strong> All transactions and billing processes are handled securely by Apple via the App Store. The developer never accesses, collects, or stores your payment details.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>
+      <span class="en">Contact Us</span>
+      2. お問い合わせ窓口
+    </h2>
+    <p>本ポリシーまたは本アプリに関するお問い合わせやサポートは、以下の窓口までお願いいたします。</p>
+
+    <div class="contact-card">
+      <div class="contact-row">
+        <span class="label">Developer / 開発者</span>
+        <span>ボンドルド (Bondrewd)</span>
+      </div>
+      <div class="contact-row">
+        <span class="label">Email / お問い合わせ先</span>
+        <a href="mailto:1004k0109n@gmail.com">1004k0109n@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    KnitRow: Crochet Row Counter
+  </footer>
+</main>
+
+</body>
+</html>
